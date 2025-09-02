@@ -8,12 +8,10 @@ namespace BinaryTree
 {
     internal class BFS : System.Collections.IEnumerator
     {
-        Tree tree = null;
         Queue<Node> queue = new Queue<Node>();
 
         public BFS(Tree tree)
         {
-            this.tree = tree;
             queue.Enqueue(tree.head);
 
         }
